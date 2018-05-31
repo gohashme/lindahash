@@ -1,0 +1,9 @@
+{
+    "crystal-lang.compiler": "/usr/local/bin/crystal",
+
+    "crystal-lang.mainFile": "${workspaceRoot}/src/lindahash.cr",
+
+    "crystal-lang.completion": true,
+
+    "crystal-lang.hover": true
+}

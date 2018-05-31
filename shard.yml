@@ -1,0 +1,17 @@
+name: lindahash
+version: 0.1.0
+
+authors:
+  - acidtib <acidtib@protonmail.com>
+
+targets:
+  lindahash:
+    main: src/lindahash.cr
+
+crystal: 0.24.2
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
