@@ -1,5 +1,9 @@
 version: 1.0
 shards:
+  crest:
+    github: mamantoha/crest
+    version: 0.10.1
+
   kemal:
     github: kemalcr/kemal
     version: 0.22.0

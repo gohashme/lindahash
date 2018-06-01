@@ -1,15 +1,31 @@
 require "kemal"
-require "./lindahash/*"
-require "./controllers/*"
+require "crest"
+require "json"
+require "./lindahash/**"
+require "./controllers/**"
 
+module Lindahash
+  before_all do |env|
+    host = env.request.headers["Host"].to_s
+    poolId = host.chomp(".localhost:3000")
 
-serve_static false
+    env.set("poolId",  poolId)
+  end
 
-Kemal.run
+  error 500 do
+    "Shits broken!"
+  end
 
-# TODO: Write documentation for `Lindahash`
-# module Lindahash
-#   # TODO: Put your code here
-# end
+  error 404 do
+    "This is a customized 404 page."
+  end
+  
+  error 403 do
+    "Access Forbidden!"
+  end
+  
+  Kemal.config.env = "development"
+  Kemal.run
+end
 
 

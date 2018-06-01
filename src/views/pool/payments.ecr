@@ -1,0 +1,5 @@
+payments: <%= poolId %> 
+
+<%- payments.each do |payment| -%>
+  <%= payment["address"] %>, <%= payment["amount"] %>
+<%- end -%>

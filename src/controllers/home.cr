@@ -1,11 +1,19 @@
-get "/" do |env|
-  host = env.request.headers["Host"].to_s
-  poolId = host.chomp(".localhost:3000")
-  
-  if poolId.size > 4
-    mainRenderer "home"
-  else
-    puts poolId
-    Lindahash::Pool.new    
+module Lindahash
+  get "/" do |env|
+    poolId = env.get("poolId").as(String)
+    
+    if poolId == "www" || poolId.size > 4 
+      home
+    else
+      pool(poolId)  
+    end
+  end
+
+  def self.home
+    view("home")
+  end
+
+  def self.pool(poolId)
+    view("pool")
   end
 end

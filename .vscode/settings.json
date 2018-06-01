@@ -1,4 +1,6 @@
 {
+    "editor.tabSize": 2,
+    
     "crystal-lang.compiler": "/usr/local/bin/crystal",
 
     "crystal-lang.mainFile": "${workspaceRoot}/src/lindahash.cr",
