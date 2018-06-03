@@ -1,0 +1,7 @@
+display_name: lindahash
+
+info: true
+
+watch:
+  - ./src/**/*.cr
+  - ./src/**/*.ecr

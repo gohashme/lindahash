@@ -1,0 +1,292 @@
+/* === Email === */
+/* Mail Sidebar */
+@media (max-width: 769px) {
+  .email-wrapper .mail-sidebar {
+    position: relative;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .email-wrapper .mail-sidebar {
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+    width: 45%;
+    min-width: 300px;
+    left: -100%;
+    display: block;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+  }
+}
+
+.email-wrapper {
+  .mail-sidebar .menu-bar {
+    width: 100%;
+    float: right;
+    height: 100%;
+    min-height: 100%;
+    .menu-items {
+      padding: 0;
+      margin-bottom: 0;
+      height: auto;
+      list-style-type: none;
+      li {
+        padding: 10px 15px;
+        transition: 0.4s;
+        position: relative;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        &:hover {
+          background: rgba(240, 244, 249, 0.8);
+        }
+        a {
+          color: #223C61;
+          font-size: 0.8rem;
+          text-decoration: none;
+          i {
+            margin-right: 8px;
+            font-size: 0.8rem;
+            line-height: 1.5;
+          }
+        }
+        &.active {
+          background: #f7f7f9;
+          border-radius: 4px;
+          a {
+            color: #db2d94;
+          }
+        }
+        &.compose:hover {
+          background: transparent;
+        }
+      }
+    }
+    .online-status {
+      margin-top: 1rem;
+      .chat {
+        font-size: 0.8rem;
+        color: #db2d94;
+        margin-bottom: 0;
+        font-family: "Open Sans", sans-serif;
+      }
+      .status {
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        display: inline-flex;
+        justify-content: flex-start;
+        transform: translateX(-43px) translateY(2px);
+        &:after {
+          font-size: 12px;
+          color: #223C61;
+          margin: -5px 0 0 18px;
+        }
+        &.offline {
+          background: #DB504A;
+          &:after {
+            content: "Offline";
+          }
+        }
+        &.online {
+          background: #4CCEAC;
+          &:after {
+            content: "Online";
+          }
+        }
+      }
+    }
+    .profile-list {
+      padding: 10px 0;
+    }
+    .profile-list-item {
+      border-bottom: 1px solid #d5dcec;
+      padding: 6px 0;
+      display: block;
+      &:last-child {
+        border-bottom: 0;
+      }
+      a {
+        text-decoration: none;
+        .pro-pic {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-align-items: center;
+          align-items: center;
+          padding: 0;
+          width: 20%;
+          max-width: 40px;
+          img {
+            max-width: 100%;
+            width: 100%;
+            border-radius: 100%;
+          }
+        }
+        .user {
+          width: 100%;
+          padding: 5px 10px 0 15px;
+          .u-name {
+            margin: 0;
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.8rem;
+            line-height: 1;
+          }
+          .u-designation {
+            font-size: calc(0.8rem - 0.1rem);
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .sidebar.open {
+    left: 0;
+  }
+  .mail-list-container {
+    border-left: 1px solid #d5dcec;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    a {
+      text-decoration: none;
+    }
+    .mail-list {
+      border-bottom: 1px solid #d5dcec;
+      display: flex;
+      flex-direction: row;
+      padding: 10px 15px;
+      width: 100%;
+      &:last-child {
+        border-bottom: none;
+      }
+      .form-check {
+        margin-top: 12px;
+        width: 11%;
+        min-width: 20px;
+      }
+      .content {
+        width: 83%;
+        padding-left: 0;
+        padding-right: 0;
+        .sender-name {
+          margin-bottom: 0;
+          font-size: 0.8rem;
+          font-family: "Open Sans", sans-serif;
+          max-width: 95%;
+        }
+        .message_text {
+          margin: 0;
+          max-width: 93%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .details {
+        width: 5.5%;
+        .date {
+          text-align: right;
+          margin: auto 15px auto 0;
+          white-space: nowrap;
+        }
+        i {
+          margin: auto 0;
+          color: #ddd;
+          &.favorite {
+            color: #FF6F59;
+          }
+        }
+      }
+      &.new_mail {
+        background: #f7f7f9;
+      }
+    }
+  }
+  .message-body {
+    .sender-details {
+      padding: 20px 15px 0;
+      border-bottom: 1px solid #d5dcec;
+      display: -webkit-flex;
+      display: flex;
+      .details {
+        padding-bottom: 0;
+        .msg-subject {
+          margin-bottom: 0;
+          font-family: "Open Sans", sans-serif;
+        }
+        .sender-email {
+          margin-bottom: 20px;
+          font-family: "Open Sans", sans-serif;
+          i {
+            font-size: 1rem;
+            font-family: "Open Sans", sans-serif;
+            margin: 0 1px 0 7px;
+          }
+        }
+      }
+    }
+    .message-content {
+      padding: 50px 15px;
+    }
+    .attachments-sections ul {
+      list-style: none;
+      border-top: 1px solid #d5dcec;
+      padding: 30px 15px 20px;
+      li {
+        padding: 10px;
+        margin-right: 20px;
+        border: 1px solid #d5dcec;
+        border-radius: 5px;
+        .thumb {
+          display: inline-block;
+          margin-right: 10px;
+          i {
+            font-size: 30px;
+            margin: 0;
+            color: #223C61;
+          }
+        }
+        .details {
+          p.file-name {
+            display: block;
+            margin-bottom: 0;
+            color: #223C61;
+          }
+          .buttons {
+            .file-size {
+              margin-right: 10px;
+              margin-bottom: 0;
+              font-size: 13px;
+            }
+            a {
+              font-size: 13px;
+              margin-right: 10px;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .email-wrapper .mail-sidebar .menu-bar {
+    min-height: 100vh;
+    max-height: 100%;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+/* Mail List Container */
+
+/* Message Content */

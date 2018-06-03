@@ -1,0 +1,15 @@
+{
+  "name": "lindahash",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "gulp": "~3.9.1",
+    "gulp-sass": "^4.0.1",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^2.0.0-beta.0",
+    "node-sass": "^4.9.0"
+  }
+}

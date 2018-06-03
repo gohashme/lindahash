@@ -1,0 +1,679 @@
+/* === Landing screens === */
+/* Auth */
+
+.auth {
+  min-height: 100vh;
+  &.auth-bg-1 {
+    background: url("../../images/auth/login_1.jpg");
+    background-size: cover;
+  }
+  &.register-bg-1 {
+    background: url("../../images/auth/register.jpg") center center no-repeat;
+    background-size: cover;
+  }
+  &.theme-one .auto-form-wrapper {
+    background: #fff;
+    padding: 40px 40px 10px;
+    border-radius: 4px;
+    box-shadow: 0 -25px 37.7px 11.3px rgba(8, 143, 220, 0.07);
+    .form-group {
+      .input-group, .asColorPicker-wrap {
+        height: 44px;
+      }
+      .input-group .form-control, .asColorPicker-wrap .form-control, .input-group .asColorPicker-input, .asColorPicker-wrap .asColorPicker-input, .input-group .dataTables_wrapper select {
+        border: 1px solid #c3cde4;
+        border-right: none;
+        border-radius: 6px 0 0 6px;
+      }
+    }
+  }
+}
+
+.dataTables_wrapper .auth.theme-one .auto-form-wrapper .form-group .input-group select, .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .dataTables_wrapper select, .dataTables_wrapper .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap select, .auth.theme-one .auto-form-wrapper .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .input-group input[type=text], .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap input[type=text], .auth.theme-one .auto-form-wrapper .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .input-group select, .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap select, .auth.theme-one .auto-form-wrapper .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .input-group input[type=number], .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap input[type=number], .auth.theme-one .auto-form-wrapper .form-group .input-group .select2-container--default .select2-selection--single, .select2-container--default .auth.theme-one .auto-form-wrapper .form-group .input-group .select2-selection--single, .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .select2-container--default .select2-selection--single, .select2-container--default .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .select2-selection--single, .auth.theme-one .auto-form-wrapper .form-group .input-group .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .auth.theme-one .auto-form-wrapper .form-group .input-group .select2-search__field, .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .select2-search__field {
+  border: 1px solid #c3cde4;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+}
+
+.auth.theme-one .auto-form-wrapper .form-group {
+  .input-group .tt-hint, .asColorPicker-wrap .tt-hint, .input-group .tt-query, .asColorPicker-wrap .tt-query, .input-group .typeahead, .asColorPicker-wrap .typeahead {
+    border: 1px solid #c3cde4;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+  }
+  .input-group .form-control:focus, .asColorPicker-wrap .form-control:focus, .input-group .asColorPicker-input:focus, .asColorPicker-wrap .asColorPicker-input:focus, .input-group .dataTables_wrapper select:focus {
+    border-right: none;
+    border-color: #c3cde4;
+  }
+}
+
+.dataTables_wrapper .auth.theme-one .auto-form-wrapper .form-group .input-group select:focus, .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .dataTables_wrapper select:focus, .dataTables_wrapper .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap select:focus, .auth.theme-one .auto-form-wrapper .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .input-group input[type=text]:focus, .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap input[type=text]:focus, .auth.theme-one .auto-form-wrapper .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .input-group select:focus, .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap select:focus, .auth.theme-one .auto-form-wrapper .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .input-group input[type=number]:focus, .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap input[type=number]:focus, .auth.theme-one .auto-form-wrapper .form-group .input-group .select2-container--default .select2-selection--single:focus, .select2-container--default .auth.theme-one .auto-form-wrapper .form-group .input-group .select2-selection--single:focus, .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .select2-container--default .select2-selection--single:focus, .select2-container--default .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .select2-selection--single:focus, .auth.theme-one .auto-form-wrapper .form-group .input-group .select2-container--default .select2-selection--single .select2-search__field:focus, .select2-container--default .select2-selection--single .auth.theme-one .auto-form-wrapper .form-group .input-group .select2-search__field:focus, .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .select2-container--default .select2-selection--single .select2-search__field:focus, .select2-container--default .select2-selection--single .auth.theme-one .auto-form-wrapper .form-group .asColorPicker-wrap .select2-search__field:focus {
+  border-right: none;
+  border-color: #c3cde4;
+}
+
+.auth {
+  &.theme-one {
+    .auto-form-wrapper {
+      .form-group {
+        .input-group .tt-hint:focus, .asColorPicker-wrap .tt-hint:focus, .input-group .tt-query:focus, .asColorPicker-wrap .tt-query:focus, .input-group .typeahead:focus, .asColorPicker-wrap .typeahead:focus {
+          border-right: none;
+          border-color: #c3cde4;
+        }
+        .input-group .input-group-append, .asColorPicker-wrap .input-group-append {
+          border-left: none;
+        }
+        .input-group .input-group-append .input-group-text, .asColorPicker-wrap .input-group-append .input-group-text {
+          border-radius: 0 6px 6px 0;
+          border-left: none;
+          border-color: #c3cde4;
+          color: #b6b6b6;
+        }
+        .submit-btn {
+          font-family: "Open Sans", sans-serif;
+          font-size: 13px;
+          padding: 12px 8px;
+          font-weight: 600;
+        }
+      }
+      .g-login {
+        border: 1px solid #d5dcec;
+        padding: 13px;
+        font-size: 12px;
+        font-weight: 600;
+        background: transparent;
+      }
+    }
+    .auth-footer {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      li {
+        margin-right: 10px;
+        line-height: 1;
+        padding-right: 10px;
+        border-right: 1px solid rgba(255, 255, 255, 0.4);
+        &:last-child {
+          margin-right: 0;
+          border-right: none;
+        }
+        a {
+          font-size: 13px;
+          color: rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+    .footer-text {
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+  &.theme-two .auto-form-wrapper {
+    position: relative;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    padding: 110px 5% 5%;
+    border-radius: 4px;
+    .nav-get-started {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      p {
+        margin-bottom: 0;
+        font-weight: 300;
+      }
+      .get-started-btn {
+        border: 1px solid #d5dcec;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #000;
+        margin-left: 20px;
+        border-radius: 50px;
+      }
+    }
+    form {
+      width: 50%;
+      min-width: 300px;
+      max-width: 480px;
+      .form-group {
+        width: 100%;
+        margin-bottom: 25px;
+        .input-group, .asColorPicker-wrap {
+          height: 44px;
+        }
+        .input-group .form-control, .asColorPicker-wrap .form-control, .input-group .asColorPicker-input, .asColorPicker-wrap .asColorPicker-input, .input-group .dataTables_wrapper select {
+          border: 1px solid #c3cde4;
+          border-left: none;
+          border-radius: 0 6px 6px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .auth.theme-one .auth-footer {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .auth.theme-two .auto-form-wrapper {
+    padding: 11% 15px;
+    text-align: center;
+    height: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .auth.theme-two .auto-form-wrapper .nav-get-started {
+    margin-bottom: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: unset;
+    right: unset;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .auth.theme-two .auto-form-wrapper form .form-group {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.dataTables_wrapper .auth.theme-two .auto-form-wrapper form .form-group .input-group select, .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .dataTables_wrapper select, .dataTables_wrapper .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap select, .auth.theme-two .auto-form-wrapper form .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .input-group input[type=text], .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap input[type=text], .auth.theme-two .auto-form-wrapper form .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .input-group select, .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap select, .auth.theme-two .auto-form-wrapper form .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .input-group input[type=number], .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap input[type=number], .auth.theme-two .auto-form-wrapper form .form-group .input-group .select2-container--default .select2-selection--single, .select2-container--default .auth.theme-two .auto-form-wrapper form .form-group .input-group .select2-selection--single, .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .select2-container--default .select2-selection--single, .select2-container--default .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .select2-selection--single, .auth.theme-two .auto-form-wrapper form .form-group .input-group .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .auth.theme-two .auto-form-wrapper form .form-group .input-group .select2-search__field, .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .select2-search__field {
+  border: 1px solid #c3cde4;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+}
+
+.auth.theme-two .auto-form-wrapper form .form-group {
+  .input-group .tt-hint, .asColorPicker-wrap .tt-hint, .input-group .tt-query, .asColorPicker-wrap .tt-query, .input-group .typeahead, .asColorPicker-wrap .typeahead {
+    border: 1px solid #c3cde4;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+  }
+  .input-group .form-control:focus, .asColorPicker-wrap .form-control:focus, .input-group .asColorPicker-input:focus, .asColorPicker-wrap .asColorPicker-input:focus, .input-group .dataTables_wrapper select:focus {
+    border-left: none;
+    border-color: #c3cde4;
+  }
+}
+
+.dataTables_wrapper .auth.theme-two .auto-form-wrapper form .form-group .input-group select:focus, .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .dataTables_wrapper select:focus, .dataTables_wrapper .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap select:focus, .auth.theme-two .auto-form-wrapper form .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .input-group input[type=text]:focus, .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap input[type=text]:focus, .auth.theme-two .auto-form-wrapper form .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .input-group select:focus, .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap select:focus, .auth.theme-two .auto-form-wrapper form .form-group .input-group .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .input-group input[type=number]:focus, .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap input[type=number]:focus, .auth.theme-two .auto-form-wrapper form .form-group .input-group .select2-container--default .select2-selection--single:focus, .select2-container--default .auth.theme-two .auto-form-wrapper form .form-group .input-group .select2-selection--single:focus, .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .select2-container--default .select2-selection--single:focus, .select2-container--default .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .select2-selection--single:focus, .auth.theme-two .auto-form-wrapper form .form-group .input-group .select2-container--default .select2-selection--single .select2-search__field:focus, .select2-container--default .select2-selection--single .auth.theme-two .auto-form-wrapper form .form-group .input-group .select2-search__field:focus, .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .select2-container--default .select2-selection--single .select2-search__field:focus, .select2-container--default .select2-selection--single .auth.theme-two .auto-form-wrapper form .form-group .asColorPicker-wrap .select2-search__field:focus {
+  border-left: none;
+  border-color: #c3cde4;
+}
+
+.auth.theme-two {
+  .auto-form-wrapper {
+    form .form-group {
+      .input-group .tt-hint:focus, .asColorPicker-wrap .tt-hint:focus, .input-group .tt-query:focus, .asColorPicker-wrap .tt-query:focus, .input-group .typeahead:focus, .asColorPicker-wrap .typeahead:focus {
+        border-left: none;
+        border-color: #c3cde4;
+      }
+      .input-group .input-group-prepend .input-group-text, .asColorPicker-wrap .input-group-prepend .input-group-text, .input-group .asColorPicker-trigger .input-group-text, .asColorPicker-wrap .asColorPicker-trigger .input-group-text {
+        border-radius: 6px 0 0 6px;
+        border-color: #c3cde4;
+        border-right: none;
+        color: #dfdfdf;
+      }
+      .submit-btn {
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        padding: 11px 33px;
+        font-weight: 600;
+        background: #db2d94;
+      }
+    }
+    .footer-text {
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+    .auth-footer {
+      list-style-type: none;
+      display: -webkit-flex;
+      display: flex;
+      margin-top: 7px;
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        margin-right: 10px;
+        line-height: 1;
+        padding-right: 10px;
+        border-right: 1px solid #a8abad;
+        &:last-child {
+          margin-right: 0;
+          border-right: none;
+        }
+        a {
+          font-size: 13px;
+          color: #a8abad;
+        }
+      }
+    }
+  }
+  .banner-section {
+    padding-right: 0;
+    .slide-content {
+      width: 100%;
+      &.bg-1 {
+        background: url("../../images/auth/login_2.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      &.bg-2 {
+        background: url("../../images/auth/register_2.jpg") no-repeat center center;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .auth.theme-two .auto-form-wrapper .auth-footer {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+
+/* Error */
+
+.error-page {
+  min-height: 100vh;
+  h1 {
+    font-size: 9.375rem;
+    line-height: 1;
+  }
+  h2 {
+    font-size: 4.375rem;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .error-page h1 {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .error-page .error-page-divider {
+    border-left: 3px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Landing */
+
+.landing-page {
+  .navbar {
+    padding: 2rem 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    .navbar-brand img {
+      width: 145px;
+    }
+    .navbar-collapse {
+      &.collapse {
+        display: none;
+      }
+      &.show {
+        display: block;
+      }
+      .navbar-nav .nav-item .nav-link {
+        color: #fff;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.9375rem;
+        font-family: "Open Sans", sans-serif;
+        text-align: left;
+      }
+    }
+  }
+  .top-banner {
+    background: url("../images/samples/Banner_bg.jpg");
+    background-size: cover;
+    .demo-image img {
+      max-width: 500px;
+    }
+    .top-banner-content {
+      padding-top: 80px;
+      padding-bottom: 120px;
+    }
+  }
+  .middle-section {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    text-align: center;
+    color: #000;
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+      border: 1px solid #d5dcec;
+      -webkit-transition: box-shadow 0.5s ease;
+      -moz-transition: box-shadow 0.5s ease;
+      -ms-transition: box-shadow 0.5s ease;
+      -o-transition: box-shadow 0.5s ease;
+      transition: box-shadow 0.5s ease;
+      &:hover {
+        box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
+      }
+      &.card-icon-top {
+        position: relative;
+        .card-body {
+          padding: 3rem;
+        }
+        .card-icon {
+          position: absolute;
+          width: 65px;
+          height: 65px;
+          top: -30px;
+          left: calc(50% - 30px);
+        }
+      }
+      &.card-item-preview {
+        position: relative;
+        .badge {
+          position: absolute;
+          top: -25px;
+          right: -35px;
+          width: 65px;
+          height: 65px;
+          padding: 1rem;
+          border-radius: 50%;
+          line-height: 32px;
+          font-size: 1rem;
+        }
+        .card-img-top {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+      }
+    }
+  }
+  .bottom-section {
+    color: #000;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .feature-list {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .feature-list-row .feature-list-item {
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+      i {
+        display: block;
+        font-size: 1.875rem;
+        margin-bottom: 2rem;
+      }
+      .feature-description {
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+  }
+  .footer {
+    background: url("../images/samples/footer_bg.jpg");
+    margin: 0;
+    width: 100%;
+    padding: 80px 0 0;
+    .footer-top {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      .brand-logo {
+        width: 145px;
+      }
+      .footer-social-icons {
+        margin-top: 3rem;
+        i {
+          width: 43px;
+          height: 43px;
+          font-size: 1rem;
+          border-radius: 100%;
+          text-align: center;
+          line-height: 43px;
+          margin-right: 0.5rem;
+        }
+      }
+      .contact-details i {
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+      .nav .nav-item {
+        .nav-link {
+          color: #fff;
+          border-right: 1px solid #d5dcec;
+          padding-top: 0;
+          padding-bottom: 0;
+          font-size: 0.9375rem;
+          font-family: "Open Sans", sans-serif;
+          line-height: 1;
+        }
+        &:last-child .nav-link {
+          border-right: 0;
+        }
+        &:first-child .nav-link {
+          padding-left: 0;
+        }
+      }
+      .form-control, .asColorPicker-input, .dataTables_wrapper select {
+        background: #171717;
+        border: 2px solid gray;
+        border-radius: 1.25rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-page .navbar .navbar-collapse {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .landing-page .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .landing-page .top-banner .demo-image img {
+    position: absolute;
+    left: -80px;
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-page .top-banner .demo-image img {
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .landing-page .feature-list .feature-list-row:first-child {
+    border-bottom: 1px solid #d5dcec;
+  }
+}
+
+@media (min-width: 992px) {
+  .landing-page .feature-list .feature-list-row .feature-list-item {
+    border-right: 1px solid #d5dcec;
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+.dataTables_wrapper .landing-page .footer .footer-top select, .landing-page .footer .footer-top .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .landing-page .footer .footer-top input[type=text], .landing-page .footer .footer-top .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row .landing-page .footer .footer-top select, .landing-page .footer .footer-top .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .landing-page .footer .footer-top input[type=number], .landing-page .footer .footer-top .select2-container--default .select2-selection--single, .select2-container--default .landing-page .footer .footer-top .select2-selection--single, .landing-page .footer .footer-top .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .landing-page .footer .footer-top .select2-search__field {
+  background: #171717;
+  border: 2px solid gray;
+  border-radius: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.landing-page .footer {
+  .footer-top {
+    .tt-hint, .tt-query, .typeahead {
+      background: #171717;
+      border: 2px solid gray;
+      border-radius: 1.25rem;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+  }
+  .footer-bottom {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
+.profile-page {
+  .profile-header {
+    width: 100%;
+    background: url("../../images/samples/profile_page/profile_header_banner.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    border-radius: 5px;
+    .profile-info {
+      .profile-user-name {
+        margin-bottom: 0;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+      }
+      .profile-user-designation {
+        margin-bottom: 0;
+        font-family: "Open Sans", sans-serif;
+      }
+      .br-wrapper {
+        padding-left: 15px;
+        .br-widget {
+          height: auto;
+          -moz-transform: translateY(-5px);
+          -o-transform: translateY(-5px);
+          -ms-transform: translateY(-5px);
+          -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+          a {
+            font-size: 18px;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .details {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      .detail-col {
+        padding-right: 20%;
+        border-right: 1px solid rgba(213, 220, 236, 0.3);
+        margin-right: 20%;
+        &:last-child {
+          border-right: none;
+          margin-right: 0;
+        }
+        p {
+          margin-bottom: 0;
+          font-weight: 400;
+          &:first-child {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .profile-body {
+    padding-top: 50px;
+    .tab-switch {
+      border-bottom: 1px solid #d5dcec;
+      .nav-item .nav-link {
+        color: #a8abad;
+        font-size: 1rem;
+        padding-bottom: 1.2rem;
+        font-weight: 600;
+        border-bottom: 3px solid #fff;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        -o-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        -webkit-transition-timing-function: ease-in;
+        -moz-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        -webkit-transition-property: color, border-color;
+        -moz-transition-property: color, border-color;
+        -o-transition-property: color, border-color;
+        transition-property: color, border-color;
+        &.active {
+          color: #000;
+          border-bottom: 3px solid #db2d94;
+        }
+      }
+    }
+    .tab-body {
+      border: none;
+      padding: 10px 0;
+      .stages {
+        position: relative;
+        .stage-badge {
+          position: absolute;
+          top: 0;
+          left: -20px;
+        }
+        .file-icon-wrapper {
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-direction: row;
+          flex-direction: row;
+          -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+          .file-icon {
+            height: 77px;
+            width: 69px;
+            padding: 5px;
+            margin-right: 25px;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            i {
+              font-size: 43px;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

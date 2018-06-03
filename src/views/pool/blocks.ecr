@@ -1,5 +1,50 @@
-blocks <%= poolId %> 
+<div class="content-wrapper">
+      <div class="row">
 
-<%- blocks.each do |block| -%>
-  <%= block["blockHeight"] %>
-<%- end -%>
+        <div class="col-lg-12 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Block History</h4>
+              
+              <div class="table-responsive">
+                <table class="table .table-striped block-history-table stratum-hosts">
+                  <thead>
+                    <tr>
+                      <th>Block #</th>
+                      <th>Found At</th>
+                      <th>Status</th>
+                      <th>Effort</th>
+                      <th>Block Value</th>
+                      <th>Difficulty</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <%- blocks.each do |block| -%>
+                      <tr>
+                                <td><%= block["blockHeight"] %></td>
+                                <td><%= block["created"] %></td>
+                                <td><%= block["status"] %></td>
+                                <td><%= block["effort"] %></td>
+                                <td><%= block["reward"] %></td>
+                                <td><%= block["networkDifficulty"] %></td>
+                              </tr>
+                    <%- end -%>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-lg-12 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Pool Daily Reward</h4>
+
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
