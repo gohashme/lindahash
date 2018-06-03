@@ -7105,6 +7105,7 @@ dl li, ol li, ul li {
 
 .table-responsive {
   .table th, .jsgrid .jsgrid-table th {
+    padding: 0.75rem;
     white-space: nowrap;
   }
 }
@@ -7115,6 +7116,7 @@ dl li, ol li, ul li {
 
 .table-responsive {
   .table td, .jsgrid .jsgrid-table td {
+    padding: 0.75rem;
     white-space: nowrap;
   }
 }
