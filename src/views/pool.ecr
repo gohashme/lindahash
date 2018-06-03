@@ -12,7 +12,7 @@
                 <div class="wrapper text-center text-sm-left">
                   <p class="card-text mb-0">Miners</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0 diggers"><%= pool["pool"]["poolStats"]["connectedMiners"] %></h3>
+                    <h3 class="card-title mb-0"><%= pool["pool"]["poolStats"]["connectedMiners"] %></h3>
                   </div>
                 </div>
               </div>
@@ -26,7 +26,7 @@
                 <div class="wrapper text-center text-sm-left">
                   <p class="card-text mb-0">Difficulty</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0 difficulty"><%= pool["pool"]["networkStats"]["networkDifficulty"] %></h3>
+                    <h3 class="card-title mb-0"><%= pool["pool"]["networkStats"]["networkDifficulty"] %></h3>
                   </div>
                 </div>
               </div>
@@ -38,9 +38,9 @@
               <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
                 <i class="fa fa-thermometer-half text-primary mr-0 mr-sm-4 icon-lg"></i>
                 <div class="wrapper text-center text-sm-left">
-                  <p class="card-text mb-0">Our Hashrate</p>
+                  <p class="card-text mb-0">Pool Hashrate</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0 our-hashrate"><%= pool["pool"]["poolStats"]["poolHashrate"] %></h3>
+                    <h3 class="card-title mb-0"><%= pool["pool"]["poolStats"]["poolHashrate"] %></h3>
                   </div>
                 </div>
               </div>
@@ -52,9 +52,9 @@
               <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
                 <i class="fa fa-thermometer-full text-primary mr-0 mr-sm-4 icon-lg"></i>
                 <div class="wrapper text-center text-sm-left">
-                  <p class="card-text mb-0">The Queens Hashrate</p>
+                  <p class="card-text mb-0">Network Hashrate</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0 queens-hashrate"><%= pool["pool"]["networkStats"]["networkHashrate"] %></h3>
+                    <h3 class="card-title mb-0"><%= pool["pool"]["networkStats"]["networkHashrate"] %></h3>
                   </div>
                 </div>
               </div>
@@ -70,11 +70,11 @@
           <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
             <div class="card-body" style="padding: 19px 25px;">
               <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
-                <i class="fa fa-laptop text-primary mr-0 mr-sm-4 icon-lg"></i>
+                <i class="fa fa-money-bill text-primary mr-0 mr-sm-4 icon-lg"></i>
                 <div class="wrapper text-center text-sm-left">
-                  <p class="card-text mb-0">Total Paid</p>
+                  <p class="card-text mb-0">Coin</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0 pool-algorithm"><%= pool["pool"]["totalPaid"] %></h3>
+                    <h3 class="card-title mb-0"><%= pool["pool"]["coin"]["type"] %></h3>
                   </div>
                 </div>
               </div>
@@ -84,11 +84,11 @@
           <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
             <div class="card-body" style="padding: 19px 25px;">
               <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
-                <i class="fa fa-money-bill text-primary mr-0 mr-sm-4 icon-lg"></i>
+                <i class="fa fa-laptop text-primary mr-0 mr-sm-4 icon-lg"></i>
                 <div class="wrapper text-center text-sm-left">
-                  <p class="card-text mb-0">Payout Scheme</p>
+                  <p class="card-text mb-0">Total Paid</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0 pool-payment"><%= pool["pool"]["paymentProcessing"]["payoutScheme"] %></h3>
+                    <h3 class="card-title mb-0"><%= pool["pool"]["totalPaid"] %></h3>
                   </div>
                 </div>
               </div>
@@ -100,9 +100,9 @@
               <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
                 <i class="fa fa-exchange-alt text-primary mr-0 mr-sm-4 icon-lg"></i>
                 <div class="wrapper text-center text-sm-left">
-                  <p class="card-text mb-0">Fee</p>
+                  <p class="card-text mb-0">Pool Fee</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0 pool-fee"><%= pool["pool"]["poolFeePercent"] %>%</h3>
+                    <h3 class="card-title mb-0"><%= pool["pool"]["poolFeePercent"] %>%</h3>
                   </div>
                 </div>
               </div>
@@ -116,7 +116,7 @@
                 <div class="wrapper text-center text-sm-left">
                   <p class="card-text mb-0">Minimum Payout</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0 pool-minimun-payout"><%= pool["pool"]["paymentProcessing"]["minimumPayment"] %></h3>
+                    <h3 class="card-title mb-0"><%= pool["pool"]["paymentProcessing"]["minimumPayment"] %> <%= pool["pool"]["coin"]["type"] %></h3>
                   </div>
                 </div>
               </div>
