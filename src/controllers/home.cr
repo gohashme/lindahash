@@ -14,6 +14,9 @@ module Lindahash
   end
 
   def self.pool(poolId)
+    poolData = Crest.get("https://miningcore-usa-00.weypool.com/api/pools/#{poolId}")
+    pool = JSON.parse(poolData.body)
+
     view("pool")
   end
 end

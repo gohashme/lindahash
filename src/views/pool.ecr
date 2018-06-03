@@ -1,1 +1,176 @@
-pool: <%= poolId %> 
+<div class="content-wrapper">
+  <div class="row">
+
+    <!-- TOP STATS -->
+    <div class="col-12 grid-margin">
+      <div class="card card-statistics">
+        <div class="row">
+          <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+            <div class="card-body"  style="padding: 19px 25px;">
+              <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                <i class="fa fa-users text-primary mr-0 mr-sm-4 icon-lg"></i>
+                <div class="wrapper text-center text-sm-left">
+                  <p class="card-text mb-0">Miners</p>
+                  <div class="fluid-container">
+                    <h3 class="card-title mb-0 diggers"><%= pool["pool"]["poolStats"]["connectedMiners"] %></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+            <div class="card-body" style="padding: 19px 25px;">
+              <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                <i class="fa fa-wrench text-primary mr-0 mr-sm-4 icon-lg"></i>
+                <div class="wrapper text-center text-sm-left">
+                  <p class="card-text mb-0">Difficulty</p>
+                  <div class="fluid-container">
+                    <h3 class="card-title mb-0 difficulty"><%= pool["pool"]["networkStats"]["networkDifficulty"] %></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+            <div class="card-body" style="padding: 19px 25px;">
+              <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                <i class="fa fa-thermometer-half text-primary mr-0 mr-sm-4 icon-lg"></i>
+                <div class="wrapper text-center text-sm-left">
+                  <p class="card-text mb-0">Our Hashrate</p>
+                  <div class="fluid-container">
+                    <h3 class="card-title mb-0 our-hashrate"><%= pool["pool"]["poolStats"]["poolHashrate"] %></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+            <div class="card-body" style="padding: 19px 25px;">
+              <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                <i class="fa fa-thermometer-full text-primary mr-0 mr-sm-4 icon-lg"></i>
+                <div class="wrapper text-center text-sm-left">
+                  <p class="card-text mb-0">The Queens Hashrate</p>
+                  <div class="fluid-container">
+                    <h3 class="card-title mb-0 queens-hashrate"><%= pool["pool"]["networkStats"]["networkHashrate"] %></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 grid-margin">
+      <div class="card card-statistics">
+        <div class="row">
+          <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+            <div class="card-body" style="padding: 19px 25px;">
+              <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                <i class="fa fa-laptop text-primary mr-0 mr-sm-4 icon-lg"></i>
+                <div class="wrapper text-center text-sm-left">
+                  <p class="card-text mb-0">Total Paid</p>
+                  <div class="fluid-container">
+                    <h3 class="card-title mb-0 pool-algorithm"><%= pool["pool"]["totalPaid"] %></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+            <div class="card-body" style="padding: 19px 25px;">
+              <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                <i class="fa fa-money-bill text-primary mr-0 mr-sm-4 icon-lg"></i>
+                <div class="wrapper text-center text-sm-left">
+                  <p class="card-text mb-0">Payout Scheme</p>
+                  <div class="fluid-container">
+                    <h3 class="card-title mb-0 pool-payment"><%= pool["pool"]["paymentProcessing"]["payoutScheme"] %></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+            <div class="card-body" style="padding: 19px 25px;">
+              <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                <i class="fa fa-exchange-alt text-primary mr-0 mr-sm-4 icon-lg"></i>
+                <div class="wrapper text-center text-sm-left">
+                  <p class="card-text mb-0">Fee</p>
+                  <div class="fluid-container">
+                    <h3 class="card-title mb-0 pool-fee"><%= pool["pool"]["poolFeePercent"] %>%</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-col col-xl-3 col-lg-3 col-md-3 col-6">
+            <div class="card-body" style="padding: 19px 25px;">
+              <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                <i class="fa fa-minus-square  text-primary mr-0 mr-sm-4 icon-lg"></i>
+                <div class="wrapper text-center text-sm-left">
+                  <p class="card-text mb-0">Minimum Payout</p>
+                  <div class="fluid-container">
+                    <h3 class="card-title mb-0 pool-minimun-payout"><%= pool["pool"]["paymentProcessing"]["minimumPayment"] %></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END TOP STATS -->
+
+    <!-- HASHRATE CHART -->
+    <div class="col-lg-12 grid-margin stretch-card pool-hashrate">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Recent Hash Rate</h4>
+          <div id="c3-recent-hash-rate"></div>
+        </div>
+      </div>
+    </div>
+    <!-- END HASHRATE CHART -->
+
+    <!-- TOP MINERS -->
+    <div class="col-lg-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Top Miners</h4>
+          <p class="card-description">
+            Based on the last 24 hours
+          </p>
+          
+          <div class="table-responsive">
+            <table class="table .table-striped top-diggers-table">
+              <thead>
+                <tr>
+                  <th>Miner</th>
+                  <th>Hashrate</th>
+                  <th>Shares</th>
+                </tr>
+              </thead>
+              <tbody>
+                <%- pool["pool"]["topMiners"].each do |miner| -%>
+                  <tr>
+                    <td><%= miner["miner"] %></td>
+                    <td><%= miner["hashrate"] %></td>
+                    <td><%= miner["sharesPerSecond"] %></td>
+                  </tr>
+                <%- end -%>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END TOP MINERS -->
+
+  </div>
+</div>
