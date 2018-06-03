@@ -2,3 +2,5 @@
 /lib/
 /bin/
 /.shards/
+/node_modules
+.DS_Store
