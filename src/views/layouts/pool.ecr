@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>GoHashMe : Mining pool for GPU and cloud miners</title>
+  <title>GoHashMe : Mining Pool for CPU, GPU and Cloud Miners</title>
 
   <link rel="stylesheet" type="text/css" href="/css/application.css">
   <script src="/js/jquery.js"></script>
@@ -54,11 +54,15 @@
                   <p class="mb-0 font-weight-medium float-left">Coins To Mine</p>
                   <span class="badge badge-pill badge-inverse-info float-right">View all</span>
                 </a>
+                
+                <div class="dropdown-divider"></div>
+
                 <%- pools["pools"].each do |pool| -%>
                   <a class="dropdown-item preview-item pool-coin">
                     <div class="preview-thumbnail">
                       <div class="preview-icon bg-inverse-success">
-                        <i class="mdi mdi-alert-circle-outline mx-0"></i>
+                        <!-- <i class="mdi mdi-alert-circle-outline mx-0"></i> -->
+                        <img src="/images/coin_logo/<%= pool["coin"]["type"] %>.jpg">
                       </div>
                     </div>
                     <div class="preview-item-content">
@@ -93,7 +97,7 @@
               <a href="/blocks" class="nav-link"><i class="link-icon fa fa-th-large"></i><span class="menu-title">BLOCKS</span></a>
             </li>
             <li class="nav-item">
-              <a href="/payments" class="nav-link"><i class="link-icon fa fa-coins"></i><span class="menu-title">PAYMENTS</span></a>
+              <a href="/payments" class="nav-link"><i class="link-icon fa fa-money-bill"></i><span class="menu-title">PAYMENTS</span></a>
             </li>
             <li class="nav-item">
               <a href="/getting-started" class="nav-link"><i class="link-icon fa fa-road"></i><span class="menu-title">GETTING STARTED</span></a>
