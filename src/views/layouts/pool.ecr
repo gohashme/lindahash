@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>GoHashMe : Mining pool for GPU and cloud miners</title>
+
+  <link rel="stylesheet" type="text/css" href="/css/application.css">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/application.js"></script>
+
+  <!-- <link rel="stylesheet" href="/iconfonts/mdi/css/materialdesignicons.min.css"> -->
+  <!-- <link rel="stylesheet" href="/iconfonts/font-awesome/css/fontawesome-all.min.css"> -->
+  <!-- <link rel="stylesheet" href="/stylesheets/c3.css"> -->
+  <!-- <link rel="stylesheet" href="/stylesheets/nv.d3.css"> -->
+  <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
+  <!-- <link rel="stylesheet" href="/stylesheets/codepen-embed-theme-code-highlight.css"> -->
+  <!-- <link rel="shortcut icon" href="/images/favicon.png" /> -->
+
+  <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+  <!-- <script src="/js/vendor.bundle.base.js"></script> -->
+  <!-- <script src="/js/moment.js"></script> -->
+  <!-- <script src="/js/vendor.bundle.addons.js"></script> -->
+  <!-- <script src="/js/d3.js" charset="utf-8"></script> -->
+  <!-- <script src="https://d3js.org/d3.v3.js"></script> -->
+  <!-- <script src="/js/c3.js"></script> -->
+
+  <!-- <script src="/js/nv.d3.js"></script> -->
+
+  <!-- <script src="/js/template.js"></script>   -->
+  <!-- <script src="/js/wae.js"></script> -->
+</head>
+<body>
+
+  <div class="container-scroller">
+
+    <nav class="navbar horizontal-layout col-lg-12 col-12 p-0">
+      <div class="container d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-top">
+          <a class="navbar-brand brand-logo" href="#"><img src="/images/weypool_logo_transparent.png" alt="logo"></a>
+          <a class="navbar-brand brand-logo-mini" href="#"><img src="/images/weypool_symbol.png" alt="logo"></a>
+        </div>
+
+        <div class="navbar-menu-wrapper d-flex align-items-center">
+          <ul class="navbar-nav navbar-nav-right mr-0">
+            <li class="nav-item dropdown ml-4">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                Pool Coins
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pool-coins" aria-labelledby="notificationDropdown">
+                <a href="#" class="dropdown-item py-3">
+                  <p class="mb-0 font-weight-medium float-left">Coins To Mine</p>
+                  <span class="badge badge-pill badge-inverse-info float-right">View all</span>
+                </a>
+                <%- pools["pools"].each do |pool| -%>
+                  <a class="dropdown-item preview-item pool-coin">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-inverse-success">
+                        <i class="mdi mdi-alert-circle-outline mx-0"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <h6 class="preview-subject font-weight-normal text-dark mb-1"><%= pool["coin"]["type"] %></h6>
+                      <p class="font-weight-light small-text mb-0">
+                        <%= pool["coin"]["algorithm"] %>
+                      </p>
+                    </div>
+                  </a>
+                <%- end -%>
+                
+                <!-- <div class="dropdown-divider"></div> -->
+              </div>
+            </li>
+          </ul>
+
+          <button class="navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </div>
+      <div class="nav-bottom">
+        <div class="container">
+          <ul class="nav page-navigation">
+            <li class="nav-item pool-nav">
+              <a href="/" class="nav-link"><i class="link-icon fa fa-blender"></i><span class="menu-title">POOL</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="/dashboard" class="nav-link"><i class="link-icon fa fa-tachometer-alt"></i><span class="menu-title">DASHBOARD</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="/blocks" class="nav-link"><i class="link-icon fa fa-th-large"></i><span class="menu-title">BLOCKS</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="/payments" class="nav-link"><i class="link-icon fa fa-coins"></i><span class="menu-title">PAYMENTS</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="/getting-started" class="nav-link"><i class="link-icon fa fa-road"></i><span class="menu-title">GETTING STARTED</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="/faq" class="nav-link"><i class="link-icon fa fa-question"></i><span class="menu-title">FAQ</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <%= content %>
+
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Need Help? <a href="https://discord.gg/HEWhsUQ" target="_blank">Discord</a></span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Made with <i class="mdi mdi-heart text-danger"></i> from sunny south florida</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

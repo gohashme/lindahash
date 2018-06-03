@@ -23904,8 +23904,7 @@ div.tagsinput {
         margin-left: 0; }
   .navbar.horizontal-layout .navbar-menu-wrapper {
     color: #fff;
-    padding-left: 15px;
-    width: calc(100% - 185px); }
+    padding-left: 15px; }
     .navbar.horizontal-layout .navbar-menu-wrapper .navbar-nav {
       flex-direction: row;
       align-items: center; }
@@ -24215,6 +24214,12 @@ div.tagsinput {
 @media (max-width: 991.98px) {
   .navbar.horizontal-layout .nav-bottom.fixed-top {
     position: relative; } }
+
+.navbar-nav .nav-item.dropdown .navbar-dropdown {
+  padding: 0px; }
+
+.navbar-nav .nav-item .pool-coins .pool-coin {
+  cursor: pointer; }
 
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com

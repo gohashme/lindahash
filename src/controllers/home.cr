@@ -1,11 +1,19 @@
 module Lindahash
   get "/" do |env|
-    poolId = env.get("poolId").as(String)
+    poolId = env.get("poolId").as(String)    
     
-    if poolId == "www" || poolId.size > 4 
+    if poolId == "www" || poolId.size > 4
+      # this is the naked domain or www
       home
     else
-      pool(poolId)  
+      # coin dashboard
+
+      # TODO: 
+      # grab pools from api
+      # make sure that poolId is in pools
+      # if it is send to pool view
+      pool(poolId)
+      # if not then send to 404
     end
   end
 
@@ -14,9 +22,12 @@ module Lindahash
   end
 
   def self.pool(poolId)
+    poolsData = Crest.get("https://miningcore-usa-00.weypool.com/api/pools")
+    pools = JSON.parse(poolsData.body)
+
     poolData = Crest.get("https://miningcore-usa-00.weypool.com/api/pools/#{poolId}")
     pool = JSON.parse(poolData.body)
 
-    view("pool")
+    view("pool", "pool")
   end
 end
