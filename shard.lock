@@ -4,6 +4,10 @@ shards:
     github: mamantoha/crest
     version: 0.10.1
 
+  dotenv:
+    github: gdotdesign/cr-dotenv
+    version: 0.1.0
+
   kemal:
     github: kemalcr/kemal
     version: 0.22.0
