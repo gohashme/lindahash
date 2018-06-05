@@ -2,7 +2,7 @@ require "dotenv"
 require "kemal"
 require "crest"
 require "json"
-require "./lindahash/**"
+require "./helpers/**"
 require "./controllers/**"
 
 module Lindahash
