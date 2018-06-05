@@ -2,6 +2,6 @@ module Lindahash
   get "/faq" do |env|
     poolId = env.get("poolId")
 
-    view("faq")
+    view("faq", "pool")
   end
 end

@@ -18,9 +18,9 @@
               <tbody>
                 <%- payments.each do |payment| -%>
                   <tr>
-                    <td><%= payment["created"] %></td>
-                    <td><a href="<%= payment["addressInfoLink"] %>" target="_blank"><%= payment["address"] %></a></td>
-                    <td><a href="<%= payment["transactionInfoLink"] %>" target="_blank"><%= payment["amount"] %></a></td>
+                    <td><%= payment.created %></td>
+                    <td><a href="<%= payment.addressInfoLink %>" target="_blank"><%= payment.address %></a></td>
+                    <td><a href="<%= payment.transactionInfoLink %>" target="_blank"><%= payment.amount %></a></td>
                   </tr>
                 <%- end -%>
               </tbody>

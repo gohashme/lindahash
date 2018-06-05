@@ -21,12 +21,12 @@
               <tbody>
                 <%- blocks.each do |block| -%>
                   <tr>
-                    <td><a href="<%= block["infoLink"] %>" target="_blank"><%= block["blockHeight"] %></a></td>
-                    <td><%= block["created"] %></td>
-                    <td><%= block["status"] %></td>
-                    <td><%= block["effort"] rescue "calculating" %></td>
-                    <td><%= block["reward"] %></td>
-                    <td><%= block["networkDifficulty"] %></td>
+                    <td><a href="<%= block.infoLink %>" target="_blank"><%= block.blockHeight %></a></td>
+                    <td><%= block.created %></td>
+                    <td><%= block.status %></td>
+                    <td><%= block.effort rescue "calculating" %></td>
+                    <td><%= block.reward %></td>
+                    <td><%= Helper.hashFormat(block.networkDifficulty, "") %></td>
                   </tr>
                 <%- end -%>
               </tbody>

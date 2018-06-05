@@ -12,16 +12,13 @@
   <script src="/js/application.js"></script>
 
   <!-- <link rel="stylesheet" href="/iconfonts/mdi/css/materialdesignicons.min.css"> -->
-  <!-- <link rel="stylesheet" href="/iconfonts/font-awesome/css/fontawesome-all.min.css"> -->
   <!-- <link rel="stylesheet" href="/stylesheets/c3.css"> -->
   <!-- <link rel="stylesheet" href="/stylesheets/nv.d3.css"> -->
-  <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
   <!-- <link rel="stylesheet" href="/stylesheets/codepen-embed-theme-code-highlight.css"> -->
   <!-- <link rel="shortcut icon" href="/images/favicon.png" /> -->
 
   <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
   <!-- <script src="/js/vendor.bundle.base.js"></script> -->
-  <!-- <script src="/js/moment.js"></script> -->
   <!-- <script src="/js/vendor.bundle.addons.js"></script> -->
   <!-- <script src="/js/d3.js" charset="utf-8"></script> -->
   <!-- <script src="https://d3js.org/d3.v3.js"></script> -->
@@ -29,8 +26,6 @@
 
   <!-- <script src="/js/nv.d3.js"></script> -->
 
-  <!-- <script src="/js/template.js"></script>   -->
-  <!-- <script src="/js/wae.js"></script> -->
 </head>
 <body>
 
@@ -57,22 +52,19 @@
                 
                 <div class="dropdown-divider"></div>
 
-                <%- pools["pools"].each do |pool| -%>
-                  <a class="dropdown-item preview-item pool-coin">
-                    <div class="preview-thumbnail">
-                      <div class="preview-icon bg-inverse-success">
-                        <!-- <i class="mdi mdi-alert-circle-outline mx-0"></i> -->
-                        <img src="/images/coin_logo/<%= pool["coin"]["type"] %>.jpg">
-                      </div>
+                <a class="dropdown-item preview-item pool-coin">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-inverse-success">
+                      <img src="/images/coin_logo/WAE.jpg">
                     </div>
-                    <div class="preview-item-content">
-                      <h6 class="preview-subject font-weight-normal text-dark mb-1"><%= pool["coin"]["type"] %></h6>
-                      <p class="font-weight-light small-text mb-0">
-                        <%= pool["coin"]["algorithm"] %>
-                      </p>
-                    </div>
-                  </a>
-                <%- end -%>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal text-dark mb-1">WeyCoin</h6>
+                    <p class="font-weight-light small-text mb-0">
+                      Lyra2re2
+                    </p>
+                  </div>
+                </a>
                 
                 <!-- <div class="dropdown-divider"></div> -->
               </div>
@@ -116,8 +108,8 @@
 
         <footer class="footer">
           <div class="container-fluid clearfix">
-            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Need Help? <a href="https://discord.gg/HEWhsUQ" target="_blank">Discord</a></span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Made with <i class="mdi mdi-heart text-danger"></i> from sunny south florida</span>
+            <!-- <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Need Help? <a href="https://discord.gg/HEWhsUQ" target="_blank">Discord</a></span> -->
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Made with love from sunny south florida</span>
           </div>
         </footer>
       </div>

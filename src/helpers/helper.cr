@@ -12,10 +12,10 @@ module Lindahash
           { hash: 1e6, symbol: "M" },
           { hash: 1e9, symbol: "G" },
           { hash: 1e12, symbol: "T" },
-          { hash: 1e15, symbol: "P" },
-          { hash: 1e18, symbol: "E" },
-          { hash: 1e21, symbol: "Z" },
-          { hash: 1e24, symbol: "Y" }
+          # { hash: 1e15, symbol: "P" },
+          # { hash: 1e18, symbol: "E" },
+          # { hash: 1e21, symbol: "Z" },
+          # { hash: 1e24, symbol: "Y" }
         }
 
         denomination = [] of NamedTuple(hash: Float64 | Int32, symbol: String)

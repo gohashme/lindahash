@@ -22,13 +22,8 @@ module Lindahash
   end
 
   def self.pool(poolId)
-    poolsData = Crest.get("https://miningcore-usa-00.weypool.com/api/pools")
-    pools = JSON.parse(poolsData.body)
-
     poolData = Crest.get("https://miningcore-usa-00.weypool.com/api/pools/#{poolId}")
     pool = PoolData.from_json(poolData.body).pool
-
-    puts pool.inspect
 
     view("pool", "pool")
   end

@@ -24221,6 +24221,10 @@ div.tagsinput {
 .navbar-nav .nav-item .pool-coins .pool-coin {
   cursor: pointer; }
 
+.table th,
+.table td {
+  padding: 0.75rem; }
+
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
