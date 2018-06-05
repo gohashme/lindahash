@@ -1,0 +1,148 @@
+<div class="content-wrapper">
+
+  <div class="row">
+
+    <!-- SET WORKER ADDRESS -->
+    <div class="col-lg-12 grid-margin stretch-card set-worker">
+      <div class="card">
+        <div class="card-body">
+          <div class="input-group">
+            <input class="form-control worker-address col-lg-9 col-sm-12" placeholder="Enter your WAE wallet address to track stats" type="text" style="color: #191919; font-size: 15px;">
+            <div class="input-group-btn col-lg-3 col-sm-12">
+              <button type="button" class="btn btn-primary track-worker">
+                <i class="fa fa-plus"></i> Track Address
+              </button>
+
+              <button type="button" class="btn btn-primary reset-dashboard" style="display: none;">
+                <i class="fa fa-plus"></i> Un-track Address
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SET WORKER ADDRESS -->
+
+    <div class="col-12">
+      <div class="row">
+        
+        <!-- STATS -->    
+        <div class="col-lg-4 grid-margin stretch-card">
+          <div class="card card-statistics miner-statistics">
+            <div class="card-col-ddd">
+                <div class="card-body"  style="padding: 19px 25px;">
+                  <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                    <i class="fa fa-thermometer-half text-primary mr-0 mr-sm-4 icon-lg"></i>
+                    <div class="wrapper text-center text-sm-left">
+                      <p class="card-text mb-0">My Hashrate</p>
+                      <div class="fluid-container">
+                        <h3 class="card-title mb-0 miner-my-hashrate">0</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card-col-ddd">
+                <div class="card-body" style="padding: 19px 25px;">
+                  <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                    <i class="fa fa-share text-primary mr-0 mr-sm-4 icon-lg"></i>
+                    <div class="wrapper text-center text-sm-left">
+                      <p class="card-text mb-0">Pending Shares</p>
+                      <div class="fluid-container">
+                        <h3 class="card-title mb-0 miner-pending-shares">0</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card-col-ddd">
+                <div class="card-body" style="padding: 19px 25px;">
+                  <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                    <i class="fa fa-clock text-primary mr-0 mr-sm-4 icon-lg"></i>
+                    <div class="wrapper text-center text-sm-left">
+                      <p class="card-text mb-0">Last Payment</p>
+                      <div class="fluid-container">
+                        <h3 class="card-title mb-0 miner-last-payment"></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card-col-ddd">
+                <div class="card-body" style="padding: 19px 25px;">
+                  <div class="d-flex align-items-center justify-content-center flex-column flex-sm-row">
+                    <i class="fa fa-dolly-flatbed text-primary mr-0 mr-sm-4 icon-lg"></i>
+                    <div class="wrapper text-center text-sm-left">
+                      <p class="card-text mb-0">Total Earning</p>
+                      <div class="fluid-container">
+                        <h3 class="card-title mb-0 miner-total-earning">0</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div> 
+        <!-- END STARTS -->
+
+        <!-- WORKERS TABLE -->
+        <div class="col-lg-8 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Active Workers</h4>
+
+              <div class="table-responsive">
+                <table class="table .table-striped miner-worker-table stratum-hosts">
+                  <thead>
+                    <tr>
+                      <th>Worker</th>
+                      <th>Hashrate</th>
+                      <th>Shares</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                  </tbody>
+                </table>
+                <h4 class="appear-hh appear-hh-worker">Your workers will appear here</h4>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- END WORKERS TABLE -->
+
+        <!-- PAYMNETS TABLE -->
+        <div class="col-lg-12 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Payments</h4>
+
+              <div class="table-responsive">
+                <table class="table .table-striped miner-payments-table stratum-hosts">
+                  <thead>
+                    <tr>
+                      <th>Processed</th>
+                      <th>Transaction Hash</th>
+                      <th>Amount Paid</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+                </table>
+                <h4 class="appear-hh appear-hh-payments">Your payments will appear here</h4>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- END PAYMNETS TABLE -->
+
+      </div>
+    </div>
+  </div>
+</div>
