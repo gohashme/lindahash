@@ -13,6 +13,13 @@ module Lindahash
     host = env.request.headers["Host"].to_s
     poolId = host.chomp(".#{ENV["URL"]}")
 
+    # pool request or landing
+    if poolId == "www" || poolId == ENV["URL"]
+      # landing
+    else
+      # pool request
+    end
+
     env.set("poolId",  poolId)
   end
 

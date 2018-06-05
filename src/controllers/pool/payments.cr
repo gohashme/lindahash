@@ -5,6 +5,6 @@ module Lindahash
     poolPayments = Crest.get("https://miningcore-usa-00.weypool.com/api/pools/#{poolId}/payments", params: {"page" => "0", "pageSize" => "15"})
     payments = Array(PoolPaymentsData).from_json(poolPayments.body)
 
-    view("pool/payments")
+    view("pool/payments", "pool")
   end
 end
