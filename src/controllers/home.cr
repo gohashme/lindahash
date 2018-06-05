@@ -26,11 +26,9 @@ module Lindahash
     pools = JSON.parse(poolsData.body)
 
     poolData = Crest.get("https://miningcore-usa-00.weypool.com/api/pools/#{poolId}")
-    pool = JSON.parse(poolData.body)
+    pool = PoolData.from_json(poolData.body).pool
 
-    pool_dev = PoolData.from_json(poolData.body).pool
-
-    puts pool_dev.inspect
+    puts pool.inspect
 
     view("pool", "pool")
   end

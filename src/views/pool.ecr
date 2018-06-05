@@ -12,7 +12,7 @@
                 <div class="wrapper text-center text-sm-left">
                   <p class="card-text mb-0">Miners</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0"><%= pool_dev.poolStats.connectedMiners %></h3>
+                    <h3 class="card-title mb-0"><%= pool.poolStats.connectedMiners %></h3>
                   </div>
                 </div>
               </div>
@@ -26,7 +26,7 @@
                 <div class="wrapper text-center text-sm-left">
                   <p class="card-text mb-0">Difficulty</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0"><%= Helper.hashFormat(pool_dev.networkStats.networkDifficulty, "", false) %></h3>
+                    <h3 class="card-title mb-0"><%= Helper.hashFormat(pool.networkStats.networkDifficulty, "", false) %></h3>
                   </div>
                 </div>
               </div>
@@ -40,7 +40,7 @@
                 <div class="wrapper text-center text-sm-left">
                   <p class="card-text mb-0">Pool Hashrate</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0"><%= Helper.hashFormat(pool_dev.poolStats.poolHashrate) %></h3>
+                    <h3 class="card-title mb-0"><%= Helper.hashFormat(pool.poolStats.poolHashrate) %></h3>
                   </div>
                 </div>
               </div>
@@ -54,7 +54,7 @@
                 <div class="wrapper text-center text-sm-left">
                   <p class="card-text mb-0">Network Hashrate</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0"><%= Helper.hashFormat(pool_dev.networkStats.networkHashrate) %></h3>
+                    <h3 class="card-title mb-0"><%= Helper.hashFormat(pool.networkStats.networkHashrate) %></h3>
                   </div>
                 </div>
               </div>
@@ -74,7 +74,7 @@
                 <div class="wrapper text-center text-sm-left">
                   <p class="card-text mb-0">Coin</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0"><%= pool_dev.coin.type %></h3>
+                    <h3 class="card-title mb-0"><%= pool.coin.type %></h3>
                   </div>
                 </div>
               </div>
@@ -88,7 +88,7 @@
                 <div class="wrapper text-center text-sm-left">
                   <p class="card-text mb-0">Total Paid</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0"><%= Helper.hashFormat(pool_dev.totalPaid, "") %></h3>
+                    <h3 class="card-title mb-0"><%= Helper.hashFormat(pool.totalPaid, "") %></h3>
                   </div>
                 </div>
               </div>
@@ -102,7 +102,7 @@
                 <div class="wrapper text-center text-sm-left">
                   <p class="card-text mb-0">Pool Fee</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0"><%= pool_dev.poolFeePercent %> %</h3>
+                    <h3 class="card-title mb-0"><%= pool.poolFeePercent %> %</h3>
                   </div>
                 </div>
               </div>
@@ -116,7 +116,7 @@
                 <div class="wrapper text-center text-sm-left">
                   <p class="card-text mb-0">Minimum Payout</p>
                   <div class="fluid-container">
-                    <h3 class="card-title mb-0"><%= pool_dev.paymentProcessing.minimumPayment %> <%= pool_dev.coin.type %></h3>
+                    <h3 class="card-title mb-0"><%= pool.paymentProcessing.minimumPayment %> <%= pool.coin.type %></h3>
                   </div>
                 </div>
               </div>
@@ -157,7 +157,7 @@
                 </tr>
               </thead>
               <tbody>
-                <%- pool_dev.topMiners.each do |miner| -%>
+                <%- pool.topMiners.each do |miner| -%>
                   <tr>
                     <td><%= miner.miner %></td>
                     <td><%= Helper.hashFormat(miner.hashrate) %></td>
