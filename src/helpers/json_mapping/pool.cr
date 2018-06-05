@@ -16,7 +16,8 @@ class PoolData
       address: String,
       poolStats: {type: PoolStats, nilable: false},
       networkStats: {type: NetworkStats, nilable: false},
-      addressInfoLink: String
+      addressInfoLink: String,
+      topMiners: {type: Array(TopMiners), nilable: false}
     )
   end
 
@@ -51,6 +52,14 @@ class PoolData
       lastNetworkBlockTime: String,
       blockHeight: Int64,
       connectedPeers: Int64
+    )
+  end
+
+  class TopMiners
+    JSON.mapping(
+      miner: String,
+      hashrate: Float64,
+      sharesPerSecond: Float64
     )
   end
 end

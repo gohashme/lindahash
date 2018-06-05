@@ -157,11 +157,11 @@
                 </tr>
               </thead>
               <tbody>
-                <%- pool["pool"]["topMiners"].each do |miner| -%>
+                <%- pool_dev.topMiners.each do |miner| -%>
                   <tr>
-                    <td><%= miner["miner"] %></td>
-                    <td><%= miner["hashrate"] %></td>
-                    <td><%= miner["sharesPerSecond"] %></td>
+                    <td><%= miner.miner %></td>
+                    <td><%= Helper.hashFormat(miner.hashrate) %></td>
+                    <td><%= Helper.hashFormat(miner.sharesPerSecond, "") %></td>
                   </tr>
                 <%- end -%>
               </tbody>
