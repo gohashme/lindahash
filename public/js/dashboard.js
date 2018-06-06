@@ -1,6 +1,6 @@
 $(function () {
   window.Dashboard = {}
-  let totalHashrate = 0
+  let totalHashrate = GoHashMe.hashFormat(0)
 
   Dashboard.main = function () {
     // first time
@@ -31,7 +31,11 @@ $(function () {
     $(".track-worker").click(function () {
       if ($(".worker-address").val().length != 0) {
         localStorage.setItem('worker-address', $(".worker-address").val())
+
         Dashboard.getMiner($(".worker-address").val())
+          .then(function (response) {
+            Dashboard.setMinerData(response.data)
+          })
 
         // flip buttons
         $('.track-worker').hide()
@@ -85,7 +89,7 @@ $(function () {
 
   Dashboard.setMinerData = function (data) {
     $('.miner-pending-shares').html(data.pendingShares)
-    $('.miner-total-earning').html(data.totalPaid)
+    $('.miner-total-earning').html(GoHashMe.hashFormat(data.totalPaid, ""))
     $('.miner-last-payment').html(moment(Date.parse(data.lastPayment)).fromNow()) // .format("MM/DD/YYYY")
 
     if (data.hasOwnProperty('performance')) {
