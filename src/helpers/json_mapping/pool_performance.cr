@@ -1,7 +1,7 @@
 module Lindahash
   class PoolPerformanceData
     JSON.mapping(
-      stats: {type: Stats, nilable: false}
+      stats: {type: Array(Stats), nilable: false}
     )
 
     class Stats
