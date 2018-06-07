@@ -4,6 +4,10 @@
 /.shards/
 /node_modules
 .DS_Store
+.env
 
 lindahash
 lindahash.dwarf
+
+gohashme
+gohashme.dwarf

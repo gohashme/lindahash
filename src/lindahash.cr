@@ -7,7 +7,7 @@ require "./controllers/**"
 
 module Lindahash
   #load .env
-  Dotenv.load! ".env-dev"
+  Dotenv.load! ".env"
 
   before_all do |env|
     host = env.request.headers["Host"].to_s
