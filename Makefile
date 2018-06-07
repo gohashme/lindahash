@@ -10,3 +10,9 @@ build:
 
 build-release:
 	crystal build --stats --progress --release --static --verbose -o gohashme ./src/lindahash.cr
+
+stop-screen:
+	killall screen
+
+run-release: stop-screen
+	./gohashme --ssl --ssl-key-file /etc/letsencrypt/live/gohashme.com/privkey.pem --ssl-cert-file /etc/letsencrypt/live/gohashme.com/fullchain.pem
