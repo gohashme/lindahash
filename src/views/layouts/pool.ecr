@@ -50,14 +50,14 @@
                 Pool Coins
               </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pool-coins" aria-labelledby="notificationDropdown">
-                <a href="#" class="dropdown-item py-3">
+                <a href="//<%= ENV["URL"] %>" class="dropdown-item py-3">
                   <p class="mb-0 font-weight-medium float-left">Coins To Mine</p>
                   <span class="badge badge-pill badge-inverse-info float-right">View all</span>
                 </a>
                 
                 <div class="dropdown-divider"></div>
 
-                <a class="dropdown-item preview-item pool-coin">
+                <a href="//<%= poolId %>.<%= ENV["URL"] %>" class="dropdown-item preview-item pool-coin">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-inverse-success">
                       <img src="//<%= ENV["URL"] %>/images/coin_logo/WAE.jpg">
@@ -85,22 +85,22 @@
         <div class="container">
           <ul class="nav page-navigation">
             <li class="nav-item pool-nav">
-              <a href="//<%= ENV["URL"] %>/" class="nav-link"><i class="link-icon fa fa-blender"></i><span class="menu-title">POOL</span></a>
+              <a href="//<%= poolId %>.<%= ENV["URL"] %>/" class="nav-link"><i class="link-icon fa fa-blender"></i><span class="menu-title">POOL</span></a>
             </li>
             <li class="nav-item">
-              <a href="//<%= ENV["URL"] %>/dashboard" class="nav-link"><i class="link-icon fa fa-tachometer-alt"></i><span class="menu-title">DASHBOARD</span></a>
+              <a href="//<%= poolId %>.<%= ENV["URL"] %>/dashboard" class="nav-link"><i class="link-icon fa fa-tachometer-alt"></i><span class="menu-title">DASHBOARD</span></a>
             </li>
             <li class="nav-item">
-              <a href="//<%= ENV["URL"] %>/blocks" class="nav-link"><i class="link-icon fa fa-th-large"></i><span class="menu-title">BLOCKS</span></a>
+              <a href="//<%= poolId %>.<%= ENV["URL"] %>/blocks" class="nav-link"><i class="link-icon fa fa-th-large"></i><span class="menu-title">BLOCKS</span></a>
             </li>
             <li class="nav-item">
-              <a href="//<%= ENV["URL"] %>/payments" class="nav-link"><i class="link-icon fa fa-money-bill"></i><span class="menu-title">PAYMENTS</span></a>
+              <a href="//<%= poolId %>.<%= ENV["URL"] %>/payments" class="nav-link"><i class="link-icon fa fa-money-bill"></i><span class="menu-title">PAYMENTS</span></a>
             </li>
             <li class="nav-item">
-              <a href="//<%= ENV["URL"] %>/getting-started" class="nav-link"><i class="link-icon fa fa-road"></i><span class="menu-title">GETTING STARTED</span></a>
+              <a href="//<%= poolId %>.<%= ENV["URL"] %>/getting-started" class="nav-link"><i class="link-icon fa fa-road"></i><span class="menu-title">GETTING STARTED</span></a>
             </li>
             <li class="nav-item">
-              <a href="//<%= ENV["URL"] %>/faq" class="nav-link"><i class="link-icon fa fa-question"></i><span class="menu-title">FAQ</span></a>
+              <a href="//<%= poolId %>.<%= ENV["URL"] %>/faq" class="nav-link"><i class="link-icon fa fa-question"></i><span class="menu-title">FAQ</span></a>
             </li>
           </ul>
         </div>
