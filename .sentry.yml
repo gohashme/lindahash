@@ -5,4 +5,4 @@ info: true
 watch:
   - ./src/**/*.cr
   - ./src/**/*.ecr
-  - ./.env-dev
+  - ./.env
