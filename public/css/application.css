@@ -24408,6 +24408,19 @@ div.tagsinput {
   text-align: center;
   margin-top: 54px; }
 
+.color-light-pink {
+  color: #db2d94; }
+
+.color-dark-pink {
+  color: #a7249c; }
+
+.miner-statistics .card-col-ddd {
+  border-bottom: 1px solid #d5dcec;
+  border-right: none; }
+
+.set-worker .input-group-btn button {
+  width: 100%; }
+
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

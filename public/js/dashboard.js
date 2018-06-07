@@ -1,6 +1,6 @@
 $(function () {
   window.Dashboard = {}
-  let totalHashrate = GoHashMe.hashFormat(0)
+  let totalHashrate = 0
 
   Dashboard.main = function () {
     // first time
@@ -76,21 +76,22 @@ $(function () {
       $('.miner-worker-table tbody').append([
         '<tr>',
         '<td>' + index + '</td>',
-        '<td>' + worker.hashrate+ '</td>',
-        '<td>' + worker.sharesPerSecond + '</td>',
+        '<td>' + GoHashMe.hashFormat(worker.hashrate)+ '</td>',
+        '<td>' + GoHashMe.hashFormat(worker.sharesPerSecond, "") + '</td>',
         '</tr>'
       ].join(''))
 
       totalHashrate += worker.hashrate
     })
 
-    $('.miner-my-hashrate').html(totalHashrate)
+    $('.miner-my-hashrate').html(GoHashMe.hashFormat(totalHashrate))
   }
 
   Dashboard.setMinerData = function (data) {
     $('.miner-pending-shares').html(data.pendingShares)
     $('.miner-total-earning').html(GoHashMe.hashFormat(data.totalPaid, ""))
-    $('.miner-last-payment').html(moment(Date.parse(data.lastPayment)).fromNow()) // .format("MM/DD/YYYY")
+    // $('.miner-last-payment').html(moment(Date.parse(data.lastPayment)).fromNow()) // .format("MM/DD/YYYY")
+    $('.miner-last-payment').html(moment(Date.parse(data.lastPayment)).format("LTS"))
 
     if (data.hasOwnProperty('performance')) {
       $('.appear-hh-worker').hide()

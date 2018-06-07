@@ -13,7 +13,7 @@
                   <th>Block #</th>
                   <th>Found At</th>
                   <th>Status</th>
-                  <th>Effort</th>
+                  <!-- <th>Effort</th> -->
                   <th>Block Value</th>
                   <th>Difficulty</th>
                 </tr>
@@ -24,7 +24,7 @@
                     <td><a href="<%= block.infoLink %>" target="_blank"><%= block.blockHeight %></a></td>
                     <td><%= block.created %></td>
                     <td><%= block.status %></td>
-                    <td><%= block.effort rescue "calculating" %></td>
+                    <!-- <td><%= block.effort rescue "calculating" %></td> -->
                     <td><%= block.reward %></td>
                     <td><%= Helper.hashFormat(block.networkDifficulty, "") %></td>
                   </tr>

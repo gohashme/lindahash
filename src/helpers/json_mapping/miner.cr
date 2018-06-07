@@ -6,26 +6,22 @@ module Lindahash
       totalPaid: Float64,
       lastPayment: String,
       lastPaymentLink: String,
-      performance: {type: Performance},
-      # performanceSamples: {type: PerformanceSamples}
+      performance: {type: Performance, nilable: true}
     )
     
 
     class Performance
       JSON.mapping(
         created: String,
-        # workers: {type: Array(Workers)}
+        workers: {type: Hash(String, (Workers))}
       )
     end
 
-    # class Workers
-      
-    # end
-
-    # class PerformanceSamples
-    #   JSON.mapping(
-
-    #   )
-    # end
+    class Workers
+      JSON.mapping(
+        hashrate: Float64,
+        sharesPerSecond: Float64
+      )
+    end
   end
 end
