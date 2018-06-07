@@ -18,7 +18,7 @@ $(function () {
   }
 
   Pool.setRecentHashRate = function (stats) {
-    let poolHashrate = ['Hashrate']
+    let poolHashrate = ['Pool Hashrate']
     let time = ['time']
 
     $.each(stats.stats, function (index, stat) {
@@ -51,16 +51,16 @@ $(function () {
           }
         },
         y: {
-          label: {
-            text: 'Pool Hashrate',
-            position: 'outer-middle'
-          },
-          // tick: {
-          //   format: function (d) {
-          //     // return Wae.hashFormat(d, 2)
-          //     return d
-          //   }
-          // }
+          // label: {
+          //   text: 'Pool Hashrate',
+          //   position: 'outer-middle'
+          // },
+          tick: {
+            format: function (d) {
+              return GoHashMe.hashFormat(d)
+            },
+            count: 10
+          }
         },
         // y2: {
         //   show: true,
