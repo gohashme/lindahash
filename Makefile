@@ -9,4 +9,4 @@ build:
 	crystal build ./src/lindahash.cr
 
 build-release:
-	crystal build --release ./src/lindahash.cr
+	crystal build --stats --progress --release --static --verbose -o gohashme ./src/lindahash.cr
