@@ -14,5 +14,5 @@ build-release:
 stop-screen:
 	killall screen
 
-run-release: stop-screen
+run-release:
 	./gohashme --ssl --ssl-key-file /etc/letsencrypt/live/gohashme.com/privkey.pem --ssl-cert-file /etc/letsencrypt/live/gohashme.com/fullchain.pem
