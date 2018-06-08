@@ -32,3 +32,35 @@
 .set-worker .input-group-btn button {
   width: 100%;
 }
+
+
+.miner-statistics {
+  i {
+    min-width: 38px;
+  }
+
+  .fa-thermometer-half {
+    &::before {
+      padding-left: 11px;
+    }
+  }
+
+  .fa-share {
+   &::before {
+      padding-left: 3px;
+    }
+  }
+
+  .fa-clock {
+    &::before {
+      padding-left: 3px;
+    }
+  }
+
+  .fa-dolly-flatbed {
+    &::before {
+      padding-left: 0px;
+    }
+  }
+}
+

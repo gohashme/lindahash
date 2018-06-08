@@ -24421,6 +24421,21 @@ div.tagsinput {
 .set-worker .input-group-btn button {
   width: 100%; }
 
+.miner-statistics i {
+  min-width: 38px; }
+
+.miner-statistics .fa-thermometer-half::before {
+  padding-left: 11px; }
+
+.miner-statistics .fa-share::before {
+  padding-left: 3px; }
+
+.miner-statistics .fa-clock::before {
+  padding-left: 3px; }
+
+.miner-statistics .fa-dolly-flatbed::before {
+  padding-left: 0px; }
+
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
