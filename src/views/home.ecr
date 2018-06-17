@@ -4,7 +4,7 @@
     <% pools.pools.each do |pool| %>
       <div class="col-md-4 col-sm-6 grid-margin stretch-card a-coin">
         <div class="card">
-        <a href="">
+        <a href="//<%= pool.coin.type.downcase %>.<%= ENV["URL"] %>">
           <div class="card-body pb-0">
             <div class="wrapper border-bottom">
               <h1 class="mb-0"><img class="img-sm rounded-circle mb-2" src="//<%= ENV["URL"] %>/images/coin_logo/<%= pool.coin.type %>.jpg"> <%= pool.coin.type %></h1>
