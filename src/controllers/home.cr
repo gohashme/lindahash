@@ -4,7 +4,7 @@ module Lindahash
     
     if poolId == "www" || poolId.size > 4
       # this is the naked domain or www
-      home
+      home("landing")
     else
       # coin dashboard
 
@@ -17,7 +17,10 @@ module Lindahash
     end
   end
 
-  def self.home
+  def self.home(poolId)
+    poolsData = Crest.get("https://miningcore-usa-00.weypool.com/api/pools")
+    pools = PoolsData.from_json(poolsData.body)
+
     view("home")
   end
 
@@ -25,6 +28,6 @@ module Lindahash
     poolData = Crest.get("https://miningcore-usa-00.weypool.com/api/pools/#{poolId}")
     pool = PoolData.from_json(poolData.body).pool
 
-    view("pool", "pool")
+    view("pool")
   end
 end
