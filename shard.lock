@@ -2,7 +2,7 @@ version: 1.0
 shards:
   crest:
     github: mamantoha/crest
-    version: 0.10.1
+    version: 0.10.2
 
   dotenv:
     github: gdotdesign/cr-dotenv
@@ -10,7 +10,7 @@ shards:
 
   kemal:
     github: kemalcr/kemal
-    version: 0.22.0
+    version: 0.23.0
 
   kilt:
     github: jeromegn/kilt
