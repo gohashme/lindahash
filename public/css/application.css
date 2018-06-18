@@ -24441,6 +24441,11 @@ div.tagsinput {
 .pool-coins .a-coin .mb-0 {
   margin: 0px 0px 5px 0px !important; }
 
+.navbar.horizontal-layout {
+  background: #14e06e; }
+  .navbar.horizontal-layout .navbar-brand-wrapper .navbar-brand img {
+    height: 59px; }
+
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
