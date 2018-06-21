@@ -39,5 +39,16 @@ module Lindahash
         return hash
       end      
     end
+
+    def self.coinName(symbol)
+      name = Nil
+
+      case symbol
+      when "WAE"
+        name = "Weycoin"
+      end
+
+      return name
+    end
   end
 end

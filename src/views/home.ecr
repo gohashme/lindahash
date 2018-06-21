@@ -2,23 +2,23 @@
   
   <div class="row pool-coins">
     <% pools.pools.each do |pool| %>
-      <div class="col-md-4 col-sm-6 grid-margin stretch-card a-coin">
+      <div class="col-md-3 col-sm-5 grid-margin stretch-card a-coin">
         <div class="card">
         <a href="//<%= pool.coin.type.downcase %>.<%= ENV["URL"] %>">
           <div class="card-body pb-0">
             <div class="wrapper border-bottom">
-              <h1 class="mb-0"><img class="img-sm rounded-circle mb-2" src="//<%= ENV["URL"] %>/images/coin_logo/<%= pool.coin.type %>.jpg"> <%= pool.coin.type %></h1>
+              <h1 class="mb-0"><img class="img-sm rounded-circle mb-2" src="//<%= ENV["URL"] %>/images/coin_logo/<%= pool.coin.type %>.jpg"> <%= Helper.coinName(pool.coin.type) %></h1>
               <h5 class="mb-0 text-gray"><%= pool.coin.algorithm %></h5>
             </div>
 
-            <div class="pt-4 border-bottom">              
+            <div class="pt-3 border-bottom">              
               <h5 class="mb-0"><span class="text-gray">Hashrate:</span> <%= Helper.hashFormat(pool.poolStats.poolHashrate) %></h5>
               <h5 class="mb-0"><span class="text-gray">Miners:</span> <%= pool.poolStats.connectedMiners %></h5>
               <h5 class="mb-0"><span class="text-gray">Fee:</span> 0.0%</h5>
             </div>
 
-            <div class="pt-4 wrapper">
-              <!-- hashrate chart -->
+            <div class="pt-3 text-center" style="margin-bottom: 17px;">
+              <button type="button" class="btn btn-outline-primary">Mine some <%= pool.coin.type %></button>
             </div>
           </div>
         </a>

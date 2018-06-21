@@ -21,3 +21,6 @@ restart:
 	make stop-screen
 	make build-release
 	make run-release
+
+rebuild-sentry:
+	curl -fsSLo- https://raw.githubusercontent.com/samueleaton/sentry/master/install.cr | crystal eval
