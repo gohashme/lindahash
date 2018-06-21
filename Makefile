@@ -18,8 +18,8 @@ run-release:
 	screen -d -m ./gohashme --ssl --ssl-key-file /etc/letsencrypt/live/gohashme.com/privkey.pem --ssl-cert-file /etc/letsencrypt/live/gohashme.com/fullchain.pem
 
 restart:
-	make stop-screen
 	make build-release
+	make stop-screen
 	make run-release
 
 rebuild-sentry:
