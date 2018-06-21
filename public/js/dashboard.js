@@ -37,6 +37,11 @@ $(function () {
             Dashboard.setMinerData(response.data)
           })
 
+        Dashboard.getMinerPayments(localStorage.getItem('worker-address'))
+          .then(function (response) {
+            Dashboard.setMinerPayments(response.data)
+          })
+
         // flip buttons
         $('.track-worker').hide()
         $('.reset-dashboard').show()
