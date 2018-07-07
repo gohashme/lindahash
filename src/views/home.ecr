@@ -11,9 +11,21 @@
               <h5 class="mb-0 text-gray"><%= pool.coin.algorithm %></h5>
             </div>
 
-            <div class="pt-3 border-bottom">              
-              <h5 class="mb-0"><span class="text-gray">Hashrate:</span> <%= Helper.hashFormat(pool.poolStats.poolHashrate) %></h5>
-              <h5 class="mb-0"><span class="text-gray">Miners:</span> <%= pool.poolStats.connectedMiners %></h5>
+            <div class="pt-3 border-bottom">  
+              <h5 class="mb-0"><span class="text-gray">Miners:</span> <%= pool.poolStats.connectedMiners %></h5>            
+              
+              <div>
+                <h5 class="mb-0"><span class="text-gray">Hashrate:</span></h5>
+                <h5 class="mb-0" style="text-align: right;"><span class="text-gray" style="font-size: 14px;">Pool:</span> <%= Helper.hashFormat(pool.poolStats.poolHashrate) %></h5>
+                <h5 class="mb-0" style="text-align: right;"><span class="text-gray" style="font-size: 14px;">Network:</span> <%= Helper.hashFormat(pool.networkStats.networkHashrate) %></h5>
+              </div>
+              
+              <div>
+                <h5 class="mb-0"><span class="text-gray">Network:</span></h5>
+                <h5 class="mb-0" style="text-align: right;"><span class="text-gray" style="font-size: 14px;">Difficulty:</span> <%= Helper.hashFormat(pool.networkStats.networkDifficulty, "", false) %></h5>
+                <h5 class="mb-0" style="text-align: right;"><span class="text-gray" style="font-size: 14px;">Height:</span> <%= pool.networkStats.blockHeight %></h5>
+              </div>
+
               <h5 class="mb-0"><span class="text-gray">Fee:</span> 0.75%</h5>
             </div>
 
