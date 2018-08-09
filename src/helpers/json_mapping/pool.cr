@@ -59,7 +59,7 @@ module Lindahash
     class TopMiners
       JSON.mapping(
         miner: String,
-        hashrate: {type: Float64 | String, nilable: false},
+        hashrate: {type: Float64 | String},
         sharesPerSecond: Float64
       )
     end

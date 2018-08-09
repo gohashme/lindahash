@@ -1,7 +1,7 @@
 module Lindahash
   module Helper
-    def self.hashFormat(hash : Float64, unit="H/s", symbolT=true)
-      if hash === "0" || hash === "Infinity"
+    def self.hashFormat(hash, unit="H/s", symbolT=true)
+      if hash === "0" || hash.to_s == "Infinity" || hash.nil?
         return "0 #{unit}"
       else
         denominations = {
@@ -28,6 +28,7 @@ module Lindahash
 
         denomination = denomination.last
         hash = (hash / denomination["hash"]).to_s
+        puts hash
         dotIndex = (hash.index('.').as(Int32) + 2)
         
         if symbolT
