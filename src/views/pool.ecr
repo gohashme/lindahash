@@ -160,7 +160,7 @@
                 <%- pool.topMiners.each do |miner| -%>
                   <tr>
                     <td><%= miner.miner %></td>
-                    <td><%= Helper.hashFormat(miner.hashrate) %></td>
+                    <td><%= Helper.hashFormat(miner.hashrate.to_f) %></td>
                     <td><%= Helper.hashFormat(miner.sharesPerSecond, "") %></td>
                   </tr>
                 <%- end -%>

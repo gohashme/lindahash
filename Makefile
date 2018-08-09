@@ -1,5 +1,4 @@
 run:
-	# crystal run ./src/lindahash.cr
 	./sentry
 
 run-ssl:
@@ -7,6 +6,11 @@ run-ssl:
 
 build:
 	crystal build ./src/lindahash.cr
+
+shards:
+	shards install
+
+install: shards rebuild-sentry
 
 build-release:
 	crystal build --stats --progress --release --verbose -o gohashme ./src/lindahash.cr

@@ -1,6 +1,6 @@
 module Lindahash
   module Helper
-    def self.hashFormat(hash, unit="H/s", symbolT=true)
+    def self.hashFormat(hash : Float64, unit="H/s", symbolT=true)
       if hash === "0"
         return "0 #{unit}"
       else
