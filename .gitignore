@@ -11,3 +11,6 @@ lindahash.dwarf
 
 gohashme
 gohashme.dwarf
+
+sentry
+dev/sentry*
