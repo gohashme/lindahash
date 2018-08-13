@@ -24,7 +24,7 @@ $(function () {
   $(".form-check .form-check-label,.form-radio .form-check-label").not(".todo-form-check .form-check-label").append('<i class="input-helper"></i>');
 
   GoHashMe.hashFormat = function (hash, unit = "H/s", symbolT = true) {
-    if (hash === 0) {
+    if (hash === 0 || hash < 0) {
       return '0 ' + unit
     } else {
       let denominations = [
